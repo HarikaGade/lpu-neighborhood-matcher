@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom right, #ffd6ec, #d9f8f3);
+
+
+
+
+
+
+
+    padding: 30px;
+    margin: 0;
+    color: #333;
+  }
+  
+.container {
+  max-width: 650px;
+  background: white;
+  padding: 40px 30px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#results {
+  margin-top: 35px;
+}
+
+#results h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+#neighborhoodList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#neighborhoodList li {
+  background: #eef3f7;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.welcome-banner {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+    color: #333;
+    max-width: 700px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #fceefc, #e0f7fa); /* pastel pink + mint */
+    padding: 22px 28px;
+    border-radius: 15px;
+    border: 3px solid #a682ff; /* pastel purple */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(4px);
+    animation: fadeWelcome 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeWelcome {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .hero-title {
+    text-align: center;
+    font-size: 32px;
+    color: #2b2e4a;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #a682ff, #f078a3); /* violet to pink */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .contact-footer {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0f7fa, #fef6ff);
+    color: #444;
+    border-top: 2px solid #a682ff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .contact-footer {
+    background: linear-gradient(to right, #fef6ff, #e0f7fa); /* Soft pastel blend */
+    max-width: 700px;
+    margin: 60px auto 20px;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-size: 17px;
+    color: #333;
+    line-height: 1.7;
+    animation: fadeInContact 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .contact-footer a {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .contact-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Optional animation */
+  @keyframes fadeInContact {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

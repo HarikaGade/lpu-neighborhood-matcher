@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neighborhood Matcher</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <p class="welcome-banner">
+    👋 <strong>Welcome to Harika’s page!</strong>
+  </p>
+  
+  <h1 class="hero-title">Find Your Perfect Place Near LPU </h1>
+
+ 
+
+
+  
+  
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Neighborhood Preference Matcher</h1>
+
+    <form id="preferenceForm">
+      <label for="amenities">Preferred Amenities (comma-separated):</label>
+      <input type="text" id="amenities" placeholder="e.g. food courts, gyms, cafes,wifi" required>
+
+
+      <label for="minSafetyRating">Minimum Safety Rating (1–5):</label>
+      <input type="number" id="minSafetyRating" min="1" max="5" required>
+
+      <label for="maxCostOfLiving">Maximum Cost of Living:</label>
+      <input type="number" id="maxCostOfLiving" required>
+
+      <button type="submit">Find Matches</button>
+    </form>
+
+    <div id="results">
+      <h2>Matching Neighborhoods:</h2>
+      <ul id="neighborhoodList"></ul>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <footer class="contact-footer">
+    📩 For any queries, feel free to reach out — I’ll be happy to assist you as soon as possible.<br>
+    ✉️ Email: <a href="mailto:harikagade.3339@gmail.com">harikagade.3339@gmail.com</a>
+  </footer>
+  
+</body>
+</html>
